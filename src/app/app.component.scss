@@ -1,0 +1,24 @@
+
+body{
+    font-family: cursive, Arial, sans-serif;
+    background-color: rgb(80, 167, 243);
+}
+button{
+    margin : 10px;
+    background-color:aliceblue;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 100%;
+    border-radius: 3px;
+    width: 30%;
+    height: 20%;
+
+    border: none;
+    &:hover{
+        background-color: rgb(120, 183, 242);
+        transition: 0.3s;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+    
+}

@@ -1,0 +1,32 @@
+
+<mat-sidenav-container>
+    
+    <div class='logo'>
+        <img class="image_acceuil" src="./assets/banniere.jpg"> 
+        <p>   </p>
+        <h2>GestionImmobiliere</h2>
+    </div>
+
+    <div>
+        <div class='buttonAlign'> 
+            <button routerLink="">
+                Acceuil
+            </button>
+            <button (click)="Connect()">
+                Rechercher
+            </button>
+            <button *ngIf="session.length == 0">
+                S'enregistrer
+            </button>
+           
+            <button *ngIf="session.getItem('role') !='Membre' && session.length != 0" routerLink="/dashboard">
+                Dashboard
+            </button>
+            <button *ngIf="session.length != 0" (click)="Logout()">
+                Se Deconnecter
+            </button>
+        </div>
+    </div>
+
+</mat-sidenav-container>
+

@@ -1,0 +1,58 @@
+div.buttonAlign{
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    float: right;
+}
+button{
+    margin : 10px;
+    background-color:aliceblue;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 90%;
+    border-radius: 3px;
+    width: 25%;
+    height: 20%;
+
+    border: none;
+    &:hover{
+        background-color: rgb(120, 183, 242);
+        transition: 0.3s;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+    
+}
+@media only screen and (max-width: 650px) {
+    div.buttonAlign {
+      width: 100%
+    }
+  }
+
+h2{
+    color: rgb(68, 124, 245);
+    width: min-content;
+    font-size: 2.5em;
+    font-family: cursive, Arial, sans-serif;
+    right: -10px;
+    position: relative;
+    
+}
+::ng-deep{
+    .mat-sidenav-container{
+        background-color: #041315de;
+        height: 100px;
+    }
+}
+.image_acceuil{
+    display: flex;
+    max-width: 50px;
+    justify-content: start;
+}
+.logo{
+    display: flex;
+    width: 100%;
+
+}

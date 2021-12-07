@@ -1,0 +1,30 @@
+body{
+    font-family: cursive, Arial, sans-serif;
+    background-color: aliceblue;
+    text-align: center;
+}
+button{
+   
+    vertical-align: middle;
+    text-align: center;
+    margin : 10px;
+    background-color:aliceblue;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 100%;
+    border-radius: 3px;
+    width: 40%;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.486);
+    background-color: white;
+    position: relative;
+    top: 40px;
+    
+    &:hover{
+        background-color: rgb(120, 183, 242);
+        transition: 0.3s;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+    
+}

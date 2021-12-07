@@ -1,0 +1,77 @@
+body{
+    font-family: cursive, Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+ .form_login {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px; 
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    gap: 10px;
+ }
+ input, label{
+     height: 30px;
+     font-size: 20px;
+     text-align: center;
+     font-family: cursive, Arial, sans-serif;
+     border: none;
+ }
+ input{
+    border: 3px solid rgba(0, 0, 0, 0.486);
+ }
+ button{
+   
+    vertical-align: middle;
+    text-align: center;
+    margin : 10px;
+    background-color:aliceblue;
+    font-family: cursive, Arial, sans-serif;
+    font-size: 100%;
+    border-radius: 3px;
+    width: 94%;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.486);
+    background-color: white;
+    position: relative;
+    top: 40px;
+    
+    &:hover{
+        background-color: rgb(120, 183, 242);
+        transition: 0.3s;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+    
+}
+::ng-deep{
+    .mat-form-field-infix{
+        background-color: white;
+        border: 3px solid rgba(0, 0, 0, 0.486);
+        height: 15px;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .mat-form-field-underline{
+        display: none;
+    }
+}
+.choice{
+    font-family: cursive, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+    .authForm {
+      width: 90%
+    }
+  }
+ 
+ 
